@@ -1,0 +1,15 @@
+Question -
+Find the number of appearances, and average number of views, likes, dislikes and comments in each category.
+
+Hive Query -
+SELECT CATEGORY_ID, COUNT(*), AVG(VIEW_COUNT), AVG(LIKES), AVG(DISLIKES), AVG(COMMENT_COUNT)
+FROM YOUTUBE_TRENDING
+GROUP BY CATEGORY_ID;
+
+Columns-
+1) Country
+2) No of appearances in that category
+3) Average number of views for a single video in that category
+4) Average number of likes for a single video in that category
+5) Average number of dislikes for a single video in that category
+6) Average number of comments for a single video in that categroy

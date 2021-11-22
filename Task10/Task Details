@@ -1,0 +1,14 @@
+Question -
+Find the maximum views, likes, dislikes and comments in each country.
+
+Hive Query -
+SELECT COUNTRY, MAX(VIEW_COUNT), MAX(LIKES), MAX(DISLIKES), MAX(COMMENT_COUNT)
+FROM YOUTUBE_TRENDING
+GROUP BY COUNTRY;
+
+Columns-
+1) Country
+2) Highest number of views for a single video in that country
+3) Highest number of likes for a single video in that country
+4) Highest number of dislikes for a single video in that country
+5) Highest number of comments for a single video in that country
