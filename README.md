@@ -38,6 +38,25 @@ Find the channel name for each channel id
 #### Output
 channelId   channel_name
 
+## Task 2
+Find the video which got the highest number of appearances, likes, dislikes, comments and views in the trending list
+### Needed Columns in dataset
+1. Video ID(categoryId)
+2. Trending Date(trending_date)
+3. View Count(view_count)
+4. Likes Count(likes)
+5. Dislikes Count(dislikes)
+6. Comments Count(comment_count)
+#### Note-
+Inside the Task2 folder, there will be a folder named output which will have a file named ‘part-r-00000’ containing the mapreduce outputs. The file contains six distinct columns.
+### Output Columns
+1. Video ID
+2. No of Appearances
+3. Views
+4. Likes
+5. Dislikes
+6. Comments
+
 ## Task 3
 Find the category which got the highest number of likes, dislikes, comments, views and videos in the trending list
 ### Needed Columns in dataset
