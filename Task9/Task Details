@@ -1,0 +1,14 @@
+Question -
+Find the ratio of number of likes is to views, number of dislikes is to views and number of comments is to views on each category for all the countries and do a comparative study.
+
+Hive Query -
+SELECT COUNTRY, CATEGORY_ID, SUM(LIKES)/SUM(VIEW_COUNT), SUM(DISLIKES)/SUM(VIEW_COUNT), SUM(COMMENT_COUNT)/SUM(VIEW_COUNT)
+FROM YOUTUBE_TRENDING
+GROUP BY COUNTRY, CATEGORY_ID;
+
+Columns-
+1) Country
+2) Category_Id
+3) Ratio of likes is to view_count
+4) Ratio of dislikes is to view_count
+5) Ratio of comment_count is to view_count
