@@ -193,3 +193,13 @@ GROUP BY CATEGORY_ID;
 4) Average number of likes for a single video in that category
 5) Average number of dislikes for a single video in that category
 6) Average number of comments for a single video in that categroy
+
+## Algorithm
+K-Means clustering was performed on US Youtube trending data to study the properties of videos which performed well.
+
+### Graphs Plotted
+1. Scatter Matrix
+2. Line plot of Cost Vs Number of Clusters
+3. Bar plot on the mean of attributes in each cluster
+4. Pie Charts on the categories in each cluster
+5. Column plot on the number of videos in each cluster
