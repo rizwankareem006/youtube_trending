@@ -133,6 +133,15 @@ Inside the Task7 folder, there will be a folder named output which will have a f
 5. Dislikes
 6. Comments
 
+## Task 8
+Find the videos which are popular in 4 or more countries with likes more than 1 million published between  01-09-2020 to 01-09-2021
+#### Note
+Output is grouped by common video id
+### Output columns
+1. video id 
+2. country name
+3. number of likes
+
 ## Task 9
 Find the ratio of number of likes is to views, number of dislikes is to views and number of comments is to views on each category for all the countries and do a comparative study.
 
@@ -194,12 +203,23 @@ GROUP BY CATEGORY_ID;
 5) Average number of dislikes for a single video in that category
 6) Average number of comments for a single video in that categroy
 
-## Algorithm
-K-Means clustering was performed on US Youtube trending data to study the properties of videos which performed well.
+# Algorithm
 
-### Graphs Plotted
+### Common Graphs
 1. Scatter Matrix
-2. Line plot of Cost Vs Number of Clusters
-3. Bar plot on the mean of attributes in each cluster
-4. Pie Charts on the categories in each cluster
-5. Column plot on the number of videos in each cluster
+
+## K-Means Clustering
+K-Means clustering was performed on US Youtube trending data to study the properties of videos which performed well.
+### Graphs Plotted
+1. Line plot of Cost Vs Number of Clusters
+2. Bar plot on the mean of attributes in each cluster
+3. Pie Charts on the categories in each cluster
+4. Column plot on the number of videos in each cluster
+
+## DBSCAN Clustering
+DBSCAN clustering was performed on US Youtube trending data to study the properties of videos which performed well.
+### Graphs Plotted
+1. Line plot of distance to the nearest point
+2. Bar plot on the mean of attributes in each cluster
+3. Pie Charts on the categories in each cluster
+4. Column plot on the number of videos in each cluster
